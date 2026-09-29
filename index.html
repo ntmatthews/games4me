@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f3ec">
+	<meta name="description" content="Pick a game and play. Browse the Games4Me collection of quick classics.">
+	<title>Games4Me | Pick a game</title>
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<header class="topbar">
+		<a class="brand" href="index.html" aria-label="Games4Me by Hyperforge Studios home">
+			<span class="brand-mark" aria-hidden="true">G4</span>
+			<span class="brand-copy"><span class="brand-name">Games<span class="brand-accent">4</span>Me</span><span class="brand-byline">by Hyperforge Studios</span></span>
+		</a>
+		<span class="top-note"><span class="status-dot" aria-hidden="true"></span> YOUR NEXT BREAK STARTS HERE</span>
+	</header>
+
+	<main>
+		<section class="intro" aria-labelledby="page-title">
+			<div class="intro-copy">
+				<p class="eyebrow">THE LITTLE ARCADE</p>
+				<h1 id="page-title">Pick a game.<br><span>Take a break.</span></h1>
+				<p class="intro-text">Four familiar favorites, ready when you are.</p>
+			</div>
+			<div class="intro-stamp" aria-hidden="true">
+				<span class="stamp-top">GOOD GAMES</span>
+				<span class="stamp-count">04</span>
+				<span class="stamp-bottom">GOOD MOOD</span>
+			</div>
+		</section>
+
+		<section class="catalog" aria-labelledby="catalog-title">
+			<div class="catalog-heading">
+				<div>
+					<p class="eyebrow">THE COLLECTION</p>
+					<h2 id="catalog-title">Choose your game</h2>
+				</div>
+				<label class="search-box">
+					<span class="search-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Search games</span>
+					<input id="game-search" type="search" placeholder="Find a game" autocomplete="off">
+					<kbd>/</kbd>
+				</label>
+			</div>
+
+			<div class="catalog-tools">
+				<div class="filters" role="group" aria-label="Filter games by type">
+					<button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All games <span>04</span></button>
+					<button class="filter-button" type="button" data-filter="puzzle" aria-pressed="false">Puzzle</button>
+					<button class="filter-button" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
+				</div>
+				<p id="game-count" class="game-count" aria-live="polite">4 games</p>
+			</div>
+
+			<div class="game-grid" id="game-grid">
+				<a class="game-card card-mine" href="minesweeper/index.html" data-name="minesweeper mine sweeper logic puzzle" data-category="puzzle">
+					<div class="game-art mine-art" aria-hidden="true">
+						<span class="art-label">01 / LOGIC</span>
+						<div class="mine-board">
+							<i></i><i class="revealed">1</i><i class="revealed">1</i><i></i><i class="mine"></i>
+							<i></i><i class="revealed">1</i><i class="revealed"> </i><i class="revealed">1</i><i></i>
+							<i class="revealed">1</i><i class="revealed">2</i><i class="mine"></i><i class="revealed">1</i><i></i>
+							<i></i><i class="revealed">1</i><i class="revealed">1</i><i class="revealed">1</i><i></i>
+							<i></i><i></i><i class="flag">!</i><i></i><i></i>
+						</div>
+						<span class="art-scribble">think<br>ahead</span>
+					</div>
+					<div class="card-info">
+						<div class="card-title-line"><h3>Minesweeper</h3><span class="card-arrow" aria-hidden="true">&#8599;</span></div>
+						<p>Clear the field. Trust your numbers.</p>
+						<div class="card-meta"><span class="tag tag-puzzle">PUZZLE</span><span>5-10 MIN</span></div>
+					</div>
+				</a>
+
+				<a class="game-card card-snake" href="snake/index.html" data-name="snake arcade classic" data-category="arcade">
+					<div class="game-art snake-art" aria-hidden="true">
+						<span class="art-label">02 / ARCADE</span>
+						<div class="snake-board">
+							<span class="snake-pixel snake-a"></span><span class="snake-pixel snake-b"></span><span class="snake-pixel snake-c"></span><span class="snake-pixel snake-d"></span><span class="snake-pixel snake-e"></span>
+							<span class="snake-food"></span>
+						</div>
+						<span class="snake-score">SCORE <b>008</b></span>
+						<span class="art-scribble">one more<br>round</span>
+					</div>
+					<div class="card-info">
+						<div class="card-title-line"><h3>Snake</h3><span class="card-arrow" aria-hidden="true">&#8599;</span></div>
+						<p>Eat, grow, and mind your tail.</p>
+						<div class="card-meta"><span class="tag tag-arcade">ARCADE</span><span>ENDLESS</span></div>
+					</div>
+				</a>
+
+				<a class="game-card card-tic" href="tic-tac-toe/index.html" data-name="tic tac toe noughts crosses strategy puzzle" data-category="puzzle">
+					<div class="game-art tic-art" aria-hidden="true">
+						<span class="art-label">03 / STRATEGY</span>
+						<div class="tic-board">
+							<i class="mark-x">X</i><i></i><i class="mark-o">O</i>
+							<i></i><i class="mark-x">X</i><i></i>
+							<i class="mark-o">O</i><i></i><i class="mark-x">X</i>
+						</div>
+						<span class="art-scribble">your<br>move</span>
+					</div>
+					<div class="card-info">
+						<div class="card-title-line"><h3>Tic-Tac-Toe</h3><span class="card-arrow" aria-hidden="true">&#8599;</span></div>
+						<p>A tiny board. A battle of wits.</p>
+						<div class="card-meta"><span class="tag tag-puzzle">PUZZLE</span><span>2 PLAYERS</span></div>
+					</div>
+				</a>
+
+				<a class="game-card card-hangman" href="hangman/index.html" data-name="hangman word letters guessing vocabulary" data-category="puzzle">
+					<div class="game-art hangman-art" aria-hidden="true">
+						<span class="art-label">04 / WORDS</span>
+						<div class="preview-hangman">
+							<span class="preview-post"></span><span class="preview-beam"></span><span class="preview-rope"></span>
+							<span class="preview-head"></span><span class="preview-body"></span><span class="preview-arm-left"></span><span class="preview-arm-right"></span><span class="preview-leg-left"></span><span class="preview-leg-right"></span>
+						</div>
+						<span class="art-scribble">guess<br>well</span>
+					</div>
+					<div class="card-info">
+						<div class="card-title-line"><h3>Hangman</h3><span class="card-arrow" aria-hidden="true">&#8599;</span></div>
+						<p>Find the word, one letter at a time.</p>
+						<div class="card-meta"><span class="tag tag-puzzle">PUZZLE</span><span>WORD GAME</span></div>
+					</div>
+				</a>
+			</div>
+			<p class="empty-state" id="empty-state" hidden>No games match that search. Try another name.</p>
+		</section>
+	</main>
+
+	<footer class="footer"><a class="footer-brand" href="index.html" aria-label="Hyperforge Studios"><svg class="studio-mark" viewBox="0 0 456.93 456.05" aria-hidden="true" focusable="false"><path fill="#011975" d="M344.03,420.97c-.55,2.03-1.06,4.42-2.47,5.24-21.71,12.45-44.83,21.27-69.47,25.82-121.83,22.5-236.14-51.18-265.67-171.18C-24.35,155.78,58.84,27.18,185.54,3.96c125.96-23.08,243.35,56.91,267.31,183.23,10.91,57.54-.24,111.68-31.19,162.57-2.2-2.1-4.11-3.86-5.95-5.69-42.64-42.62-85.23-85.28-127.96-127.81-5.98-5.95-12.66-11.2-19.34-17.06,8.36-30.43,17.04-61.84,25.6-93.28,2.85-10.46-1.26-18.84-10.26-20.53-2.92-.55-6.24.03-9.19.82-22.26,5.94-44.47,12.06-66.69,18.14-10.31,2.82-20.6,5.76-30.95,8.42-1.22.31-2.95-.47-4.18-1.2-18.56-11.04-37.98-9.5-51.77,4.17-14.35,14.23-16.07,33.89-4.62,52.83.23.37.34.81.73,1.76-10.44,10.43-21.04,20.99-31.61,31.59-21.36,21.43-21.31,49.33.11,70.88,7.43,7.47,14.81,14.99,22.32,22.37,19.46,19.13,48.06,19.17,67.52.1,7.65-7.5,15.15-15.16,21.51-21.54,49.22,49.28,97.95,98.08,147.08,147.25Z"/></svg><span>Hyperforge Studios</span></a><span>MADE FOR A MOMENT OF PLAY</span><a class="feedback-link" href="feedback.html">Feedback</a><span>2026</span></footer>
+</body>
+</html>
